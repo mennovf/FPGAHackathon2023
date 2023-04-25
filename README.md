@@ -1,3 +1,4 @@
+# 2023 FPGA Hackathon
 I participated online in a 24h hackathon organised by Nokia in Krakow this year. The event wasn't so much a hackathon but rather a coding competition exclusively for FPGAs.
 I registered with two other friends but for life reasons they both had to drop out near the beginning of the competition. Despite this I completed 7 of the 10 tasks because it was fun and I wanted to learn. For this reason I also decided not to spend the full 24 hours on this competition but only my free time.
 

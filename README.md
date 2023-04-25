@@ -36,7 +36,7 @@ $$ v \cdot u = \left| v \right| \left| u \right| \cos(\phi) $$
 
 $$ \cos(\phi) = \frac{v \cdot u}{\left| v \right| \left| u \right|} $$
 
-If $\cos(\phi) < \cos(\frac{2\pi}{8})$ = C. 
+If $\cos(\phi) < \cos(\frac{2\pi}{8})$ = C, the point $v$ is less than $\frac{2\pi}{8}$ radians removed from the vector $u$. If we take $u$ to be the bisector of the octant we're investigating, we can determine whether $v$ is in its octant or not.
 The way it's written now still requires a lot of fractional math: $\sqrt{}$ for the vector lengths and divisions to normalize. It turns out we can avoid all this by looking at the axes first.
 The dot product with an axis $v \cdot y$ is just the corresponding component of the vector: $v_y$ . The length of the axis is $1$ thus the computation becomes
 

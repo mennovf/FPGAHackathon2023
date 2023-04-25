@@ -16,7 +16,7 @@ The result of the exact calculation should be rounded to the nearest integer to 
 
 This was straightforwardly solved by using 12 extra fractional bits (we need at least 10 for the 3 fractional digits). The rounding can be accomplished by adding $0.5$ right before truncating the fractional bits.
 
-$$ Y = (0.299 \cdot 2^{12})R + (0.587 \cdot 2^{12})G +(0.114 \cdot 2^{12})B\gg 12 $$
+$$ Y = \frac{1}{2} \cdot 2^{12} + (0.299 \cdot 2^{12})R + (0.587 \cdot 2^{12})G +(0.114 \cdot 2^{12})B\gg 12 $$
 
 ### Problem 2
 The input was a 5x5 square of bytes. We were tasked to return the 9 3x3 overlapping windows in turn within the input.

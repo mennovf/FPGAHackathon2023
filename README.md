@@ -3,7 +3,7 @@ I participated online in a 24h hackathon organised by Nokia in Krakow this year.
 I registered with two other friends but for life reasons they both had to drop out near the beginning of the competition. Despite this I completed 7 of the 10 tasks because it was fun and I wanted to learn. For this reason I also decided not to spend the full 24 hours on this competition but only my free time.
 
 ## The tasks
-There were ten tasks related to the theme of rescueing a Mars colony town which suffered from technical problems. We were handed a Quartus project with a project already set-up with lots of scaffolding for the judge system. This made it so we could focus on small self-contained problems which made it a whole lot easier. On top of that, there were no requirements or points to win for efficient implementations. It is still more fun to aim for one though.
+There were ten tasks related to the theme of rescuing a Mars colony town which suffered from technical problems. We were handed a Quartus project with a project already set-up with lots of scaffolding for the judge system. This made it so we could focus on small self-contained problems which made it a lot easier. On top of that, there were no requirements or points to win for efficient implementations. It is still more fun to aim for one though.
 I have only had experience with VHDL, but the template solutions were written in SystemVerilog. Luckily the provided scaffolding made this no problem. It turns out that there's pretty much a 1-to-1 mapping between VHDL and SystemVerilog at least when it comes down to actual implementations. I can image the differences are much larger for project organisation and validation. 
 The tasks themselves weren't difficult either. Solving them in a regular programming language would take just a couple minutes. The more difficult part was getting it to run on an fpga e.g. timing constraints, pipelining and math with real numbers.
 
@@ -50,7 +50,7 @@ We can square both sides to remove the square root. By squaring, the new equatio
 
 $$v_y^2 < C^2(v_x^2 + v_y^2)$$
 
-Now we're left with two integer multiplies, and multiplication with a constant which we can easily perform in fixed-point with the necesarry resolution.
+Now we're left with two integer multiplies, and multiplication with a constant which we can easily perform in fixed-point with the necessary resolution.
 At this point we can determine whether a vector lies in the x-axis or y-axis octants, but we still need to take care of the diagonals. This becomes simple now that we can know if a vector DOESN'T lie in the x or y cones because we can look at the normal quadrants.
 ![Quadrants](readme/quadrants.png "Task quadrants")
 
@@ -88,4 +88,4 @@ Calculate $\frac{1}{\sqrt{x}}$ where the inputs are single precision floating-po
 Finding this IP core took me multiple hours though. Searching the built-in IP browser for _floating_ or  _fpu_ only resulted in a Nios FPU core. I tried to use this but I couldn't find documentation anywhere and it didn't produce the right result for an unknown reason. After this I found the ALTFP_\* cores which had an ALTFP_INV_SQRT ready to go. When I tried to instantiate this however, the Wizard splash screen progress bar would show up, but then nothing happend. I had to google a long time before I found that I had to go through the *FP_FUNCTIONS Intel FPGA IP* IP core wizard where I could then select the INV_SQRT functionality.
 
 ### Problem 10
-Demodulate an _analog_ 16-bit QAM measurement into a 4-bit digital value. Solved by comparisons seperate comparisons on the I and Q parts then mapping into the requested symbols.
+Demodulate an _analog_ 16-bit QAM measurement into a 4-bit digital value. Solved by comparisons separate comparisons on the I and Q parts then mapping into the requested symbols.

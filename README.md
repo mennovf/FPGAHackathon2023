@@ -70,7 +70,7 @@ B' = A-\omega B
 \end{cases}
 $$
 
-I calculated this with 4 float multipliers and 2 adders and subtractors each by converting the calculations to real math.
+I calculated this in real math with 4 float multipliers and 2 adders and subtractors each.
 
 $$
 C = (\omega_{re}B_{re} - \omega_{im}B_{im}) + (\omega_{im}B_{re} + \omega_{re}B_{im})i

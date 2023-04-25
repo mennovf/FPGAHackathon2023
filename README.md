@@ -14,9 +14,9 @@ $$ Y = 0.299R + 0.587G + 0.114B $$
 
 The result of the exact calculation should be rounded to the nearest integer to return it as a byte.
 
-This was straightforwardly solved by using 14 extra fractional bits (we need at least 10 for the 3 fractional digits). The rounding can be accomplished by adding $0.5$ right before truncating the fractional bits.
+This was straightforwardly solved by using 12 extra fractional bits (we need at least 10 for the 3 fractional digits). The rounding can be accomplished by adding $0.5$ right before truncating the fractional bits.
 
-$$ Y = (0.299 \cdot 2^{14})R + (0.587 \cdot 2^{14})G +(0.114 \cdot 2^{14})B\gg 14 $$
+$$ Y = (0.299 \cdot 2^{12})R + (0.587 \cdot 2^{12})G +(0.114 \cdot 2^{12})B\gg 12 $$
 
 ### Problem 2
 The input was a 5x5 square of bytes. We were tasked to return the 9 3x3 overlapping windows in turn within the input.

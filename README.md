@@ -51,6 +51,7 @@ We can square both sides to remove the square root. By squaring, the new equatio
 $$v_y^2 < C^2(v_x^2 + v_y^2)$$
 
 Now we're left with two integer multiplies, and multiplication with a constant which we can easily perform in fixed-point with the necessary resolution.
+
 At this point we can determine whether a vector lies in the x-axis or y-axis octants, but we still need to take care of the diagonals. This becomes simple now that we can know if a vector DOESN'T lie in the x or y cones because we can look at the normal quadrants.
 ![Quadrants](readme/quadrants.png "Task quadrants")
 

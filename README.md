@@ -23,7 +23,7 @@ The input was a 5x5 square of bytes. We were tasked to return the 9 3x3 overlapp
 The input didn't need any processing so this was simple indexing, with a loop which increments the start point of the window each cycle.
 
 ### Problem 4
-We were tasked with returning a 3-bit enumeration of the octants an $(x, y)$ input vector belongs to.  
+We were tasked with returning a 3-bit enumeration of the octant an $(x, y)$ input vector belongs to.  
 ![Octants](readme/octants.png "Task octants")
 The problem statement deliberately included the formula
 

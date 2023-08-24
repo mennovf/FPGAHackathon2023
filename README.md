@@ -24,7 +24,7 @@ The input didn't need any processing so this was simple indexing, with a loop wh
 
 ### Problem 4
 We were tasked with returning a 3-bit enumeration of the octant an $(x, y)$ input vector belongs to.  
-![Octants](readme/octants.png "Task octants")
+![Octants](https://github.com/mennovf/FPGAHackathon2023/blob/master/readme/octants.png?raw=true "Task octants")
 The problem statement deliberately included the formula
 
 $$ \phi = \arctan(\frac{y}{x})  $$
@@ -53,7 +53,7 @@ $$v_y^2 < C^2(v_x^2 + v_y^2)$$
 Now we're left with two integer multiplies, and multiplication with a constant which we can easily perform in fixed-point with the necessary resolution.
 
 At this point we can determine whether a vector lies in the x-axis or y-axis octants, but we still need to take care of the diagonals. This becomes simple now that we can know if a vector DOESN'T lie in the x or y cones because we can look at the normal quadrants.
-![Quadrants](readme/quadrants.png "Task quadrants")
+![Quadrants](https://github.com/mennovf/FPGAHackathon2023/blob/master/readme/quadrants.png?raw=true "Task quadrants")
 
 If the sign of x and y differ, it's in the green quadrants, otherwise purple. The differing sign is checked with an XOR between the sign bits. 
 
